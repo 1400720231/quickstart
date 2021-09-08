@@ -8,4 +8,6 @@ import (
 func init() {
 	//路由
 	beego.Router("/", &controllers.MainController{})
+	//user路由
+	beego.Router("/user", &controllers.UserController{})
 }
