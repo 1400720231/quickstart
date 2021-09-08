@@ -1,11 +1,11 @@
 package routers
 
 import (
-	"quickstart/controllers"
 	beego "github.com/beego/beego/v2/server/web"
+	"quickstart/controllers"
 )
 
 func init() {
-	
-    beego.Router("/", &controllers.MainController{})
+	//路由
+	beego.Router("/", &controllers.MainController{})
 }
